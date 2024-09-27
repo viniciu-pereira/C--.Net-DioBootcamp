@@ -1,16 +1,19 @@
 ﻿using System;
+using Example.Models;
 
-namespace Example.Models;
-
-public class Pessoa
+namespace Example.Models
 {
 
-    public string Nome { get; set; }
-    public int Idade { get; set; }
-    
-       
-    public void Apresentar()
+    public class Pessoa
     {
-        Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade}");
+
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+
+
+        public void Apresentar()
+        {
+            Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade}");
+        }
     }
 }
